@@ -17,7 +17,9 @@ jobs:
           for dir in src/*/; do
             zip -r "dist/$(basename $dir).zip" "$dir"
           done
-      - with:
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/
           user_name: "github-actions[bot]"
