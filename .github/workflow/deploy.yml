@@ -1,0 +1,24 @@
+name: Zip and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: montudor/action-zip@v1
+      - run: |
+          mkdir dist
+          for dir in src/*/; do
+            zip -r "dist/$(basename $dir).zip" "$dir"
+          done
+      - with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
