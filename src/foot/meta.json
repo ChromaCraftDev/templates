@@ -1,12 +1,11 @@
 {
-  "name": "foot",
   "version": "0.1.0",
   "project_homepage": "https://codeberg.org/dnkl/foot",
-  "platoforms": ["linux"],
+  "platforms": ["linux"],
   "install": {
     "src": "src.ini",
     "destination": {
-      "linux": ".config/foot/foot.ini",
+      "linux": ".config/foot/foot.ini"
     }
   }
 }

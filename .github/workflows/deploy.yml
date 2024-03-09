@@ -9,21 +9,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      pages: write
+      id-token: write
     concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+      group: "pages"
+      cancel-in-progress: false
 
     steps:
       - uses: actions/checkout@v4
-      - uses: montudor/action-zip@v1
       - run: |
-          mkdir dist
+          mkdir -p dist && \
           for dir in src/*/; do
-            zip -r "dist/$(basename $dir).zip" "$dir"
-          done
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+            zip -r "dist/$(basename "$dir").zip" "$dir" >/dev/null && \
+            jq "{\"$(basename "$dir")\": .}" "$dir/meta.json"
+          done | \
+          jq add -sc > dist/templates.json
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/
+          path: 'dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
