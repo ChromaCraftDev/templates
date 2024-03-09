@@ -6,7 +6,7 @@
   "install": {
     "src": "src.ini",
     "destination": {
-      "linux": "$HOME/.config/foot/foot.ini",
+      "linux": ".config/foot/foot.ini",
     }
   }
 }
