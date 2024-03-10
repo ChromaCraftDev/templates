@@ -21,7 +21,9 @@ jobs:
       - run: |
           mkdir -p dist && \
           for dir in src/*/; do
-            zip -r "dist/$(basename "$dir").zip" "$dir" >/dev/null && \
+            pushd $dir >/dev/null && \
+            zip -r "../../dist/$(basename "$dir").zip" . >/dev/null && \
+            popd >/dev/null && \
             jq ". += {name: \"$(basename "$dir")\"}" "$dir/meta.json"
           done | \
           jq -sc > dist/templates.json
