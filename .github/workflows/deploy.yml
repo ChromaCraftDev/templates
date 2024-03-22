@@ -20,9 +20,11 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           mkdir -p dist && \
+          mkdir -p dist/previews && \
           for dir in src/*/; do
             pushd $dir >/dev/null && \
-            zip -r "../../dist/$(basename "$dir").zip" . >/dev/null && \
+            cp "preview.webp" "../../dist/previews/$(basename "$dir").webp" && \
+            zip -x "preview.webp" -r "../../dist/$(basename "$dir").zip" . >/dev/null && \
             popd >/dev/null && \
             jq ". += {name: \"$(basename "$dir")\"}" "$dir/meta.json"
           done | \
