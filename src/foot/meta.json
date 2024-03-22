@@ -1,7 +1,8 @@
 {
-  "version": 0,
+  "version": 1,
   "project_homepage": "https://codeberg.org/dnkl/foot",
   "platforms": ["linux"],
+  "preview_image": "preview.webp",
   "install": {
     "src": "src.ini",
     "destination": {
