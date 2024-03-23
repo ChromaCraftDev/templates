@@ -3,7 +3,7 @@
   "project_homepage": "https://codeberg.org/dnkl/foot",
   "platforms": ["linux"],
   "install": {
-    "src": "src.ini",
+    "src": "foot.ini",
     "destination": {
       "linux": "${HOME}/.config/foot/foot.ini"
     }
