@@ -1,0 +1,27 @@
+<idea-plugin url="https://www.github.com/ShiromMakkad/base16-jetbrains-ide">
+<id>dev.chromacraft</id>
+<name>ChromaCraft Dynamic Theme</name>
+<version>1.0.0</version>
+<vendor>ChromaCraft</vendor>
+
+<description><![CDATA[
+  <p>A dynamic personality for Jetbrains IDE</p>
+  <br>
+  <p>---------------</p>
+  <br>
+  <p>Theme generated using ChromaCraft</p>
+    ]]>
+</description>
+
+<change-notes><![CDATA[
+  <p>Version 1.0.0</p>
+    ]]>
+</change-notes>
+<idea-version since-build="191.0"/>
+
+<depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="chromacraft" path="/chromacraft.theme.json"/>
+  </extensions>
+</idea-plugin>
