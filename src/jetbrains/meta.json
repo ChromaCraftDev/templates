@@ -6,7 +6,7 @@
     "src": "plugin",
     "zip": true,
     "destination": {
-      "windows": "${USERPROFILE}\\AppData\\Roaming\\Programs\\JetBrains\\IdeaIC2023.1\\plugins\\chromacraft.jar",
+      "windows": "${USERPROFILE}\\AppData\\Roaming\\JetBrains\\IdeaIC2023.1\\plugins\\chromacraft.jar",
       "linux": "${HOME}/.local/share/JetBrains/IdeaIC2023.3/chromacraft.jar"
     }
   }
