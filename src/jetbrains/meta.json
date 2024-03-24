@@ -1,7 +1,7 @@
 {
   "version": 0,
   "project_homepage": "https://www.jetbrains.com/ides/",
-  "platforms": ["windows" "linux"],
+  "platforms": ["windows", "linux"],
   "install": {
     "src": "plugin",
     "zip": true,
