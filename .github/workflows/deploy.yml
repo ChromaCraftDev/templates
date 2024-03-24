@@ -22,12 +22,12 @@ jobs:
           mkdir -p dist && \
           mkdir -p dist/previews && \
           for dir in src/*/; do
-            pushd $dir >/dev/null && \
-            mv preview.webp "../../dist/previews/$(basename "$dir").webp" >/dev/null || \
+            pushd $dir >/dev/null
+            mv preview.webp "../../dist/previews/$(basename "$dir").webp" >/dev/null
             jq -c ". += {name: \"$(basename "$dir")\"}" meta.json >meta.json.1 && \
             mv -f meta.json.1 meta.json && \
-            zip -x "preview.webp" -r "../../dist/$(basename "$dir").zip" . >/dev/null && \
-            popd >/dev/null && \
+            zip -x "preview.webp" -r "../../dist/$(basename "$dir").zip" . >/dev/null
+            popd >/dev/null
             cat "$dir/meta.json"
           done | \
           jq -sc > dist/templates.json
