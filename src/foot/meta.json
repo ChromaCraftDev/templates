@@ -1,7 +1,6 @@
 {
-  "version": 3,
+  "version": 4,
   "project_homepage": "https://codeberg.org/dnkl/foot",
-  "platforms": ["linux"],
   "install": {
     "src": "foot.ini",
     "destination": {

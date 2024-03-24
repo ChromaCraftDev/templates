@@ -1,11 +1,10 @@
 {
-  "version": 2,
+  "version": 3,
   "project_homepage": "https://code.visualstudio.com/",
-  "platforms": ["windows"],
   "install": {
     "src": "theme.json",
     "destination": {
-      "windows": "${USERPROFILE}\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\theme-defaults\\themes\\dark_modern.json"
+      "windows": "${LOCALAPPDATA}\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\theme-defaults\\themes\\dark_modern.json"
     }
   }
 }

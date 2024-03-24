@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "project_homepage": "https://openasar.dev/",
+  "install": {
+    "src": "settings.json",
+    "destination": {
+      "windows": "${APPDATA}\\discord\\settings.json",
+      "linux": "${HOME}/.config/discord/settings.json",
+      "macos": "${HOME}/Library/Application Support/discord/settings.json"
+    }
+  }
+}
