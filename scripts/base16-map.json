@@ -1,0 +1,66 @@
+[
+  {
+    "find": "{{base00-hex}}",
+    "replace": "{{ base }}"
+  },
+  {
+    "find": "{{base01-hex}}",
+    "replace": "{{ container }}"
+  },
+  {
+    "find": "{{base02-hex}}",
+    "replace": "{{ shade }}"
+  },
+  {
+    "find": "{{base03-hex}}",
+    "replace": "{{ subtle }}"
+  },
+  {
+    "find": "{{base04-hex}}",
+    "replace": "{{ subtle | smartLighten 0.2 }}"
+  },
+  {
+    "find": "{{base05-hex}}",
+    "replace": "{{ text }}"
+  },
+  {
+    "find": "{{base06-hex}}",
+    "replace": "{{ text | smartLighten 0.2 }}"
+  },
+  {
+    "find": "{{base07-hex}}",
+    "replace": "{{ shade }}"
+  },
+  {
+    "find": "{{base08-hex}}",
+    "replace": "{{ error }}"
+  },
+  {
+    "find": "{{base09-hex}}",
+    "replace": "{{ orange }}"
+  },
+  {
+    "find": "{{base0A-hex}}",
+    "replace": "{{ warning }}"
+  },
+  {
+    "find": "{{base0B-hex}}",
+    "replace": "{{ success }}"
+  },
+  {
+    "find": "{{base0C-hex}}",
+    "replace": "{{ cyan }}"
+  },
+  {
+    "find": "{{base0D-hex}}",
+    "replace": "{{ primary }}"
+  },
+  {
+    "find": "{{base0E-hex}}",
+    "replace": "{{ alternate }}"
+  },
+  {
+    "find": "{{base0F-hex}}",
+    "replace": "{{ error }}"
+  }
+]

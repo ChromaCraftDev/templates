@@ -11,9 +11,9 @@
         "foreground": "#{{ text }}", //5
         "disabledForeground": "#{{ subtle | smartLighten 0.2 }}", //4
         "widget.shadow": "#{{ base }}", //0
-        "selection.background": "#{{ blue }}", //D
+        "selection.background": "#{{ primary }}", //D
         "descriptionForeground": "#{{ subtle }}", //3
-        "errorForeground": "#{{ red }}", //8
+        "errorForeground": "#{{ error }}", //8
         "icon.foreground": "#{{ subtle | smartLighten 0.2 }}", //4
         // "sash.hoverBorder": "#ff0000",
 
@@ -23,11 +23,11 @@
 
         // Text colors
         "textBlockQuote.background": "#{{ container }}", //1
-        "textBlockQuote.border": "#{{ blue }}", //D
+        "textBlockQuote.border": "#{{ primary }}", //D
         "textCodeBlock.background": "#{{ base }}", //0
         "textLink.activeForeground": "#{{ cyan }}", //C
-        "textLink.foreground": "#{{ blue }}", //D
-        "textPreformat.foreground": "#{{ blue }}", //D
+        "textLink.foreground": "#{{ primary }}", //D
+        "textPreformat.foreground": "#{{ primary }}", //D
         "textSeparator.foreground": "#f0f",
 
         // Action colors
@@ -36,12 +36,12 @@
         "toolbar.activeBackground": "#{{ subtle }}", //3
 
         // Button control
-        "button.background": "#{{ blue }}", //D
+        "button.background": "#{{ primary }}", //D
         "button.foreground": "#{{ shade }}", //7
         // "button.border": "#ff0000",
         "button.hoverBackground": "#{{ subtle | smartLighten 0.2 }}", //4
         "button.secondaryForeground": "#{{ shade }}", //7
-        "button.secondaryBackground": "#{{ purple }}", //E
+        "button.secondaryBackground": "#{{ alternate }}", //E
         "button.secondaryHoverBackground": "#{{ subtle | smartLighten 0.2 }}", //4
         "checkbox.background": "#{{ base }}", //0
         "checkbox.foreground": "#{{ text }}", //5
@@ -61,15 +61,15 @@
         "inputOption.activeBackground": "#{{ shade }}", //2
         "inputOption.activeBorder": "#{{ orange }}", //9
         "inputOption.activeForeground": "#{{ text }}", //5
-        "inputValidation.errorBackground": "#{{ red }}", //8
+        "inputValidation.errorBackground": "#{{ error }}", //8
         "inputValidation.errorForeground": "#{{ text }}", //5
-        "inputValidation.errorBorder": "#{{ red }}", //8
-        "inputValidation.infoBackground": "#{{ blue }}", //D
+        "inputValidation.errorBorder": "#{{ error }}", //8
+        "inputValidation.infoBackground": "#{{ primary }}", //D
         "inputValidation.infoForeground": "#{{ text }}", //5
-        "inputValidation.infoBorder": "#{{ blue }}", //D
-        "inputValidation.warningBackground": "#{{ yellow }}", //A
+        "inputValidation.infoBorder": "#{{ primary }}", //D
+        "inputValidation.warningBackground": "#{{ warning }}", //A
         "inputValidation.warningForeground": "#{{ text }}", //5
-        "inputValidation.warningBorder": "#{{ yellow }}", //A
+        "inputValidation.warningBorder": "#{{ warning }}", //A
 
         // Scrollbar control
         "scrollbar.shadow": "#{{ container }}", //1
@@ -96,12 +96,12 @@
         "list.inactiveSelectionBackground": "#{{ shade }}", //2
         "list.inactiveSelectionForeground": "#{{ text }}", //5
         "list.inactiveFocusBackground": "#{{ shade }}", //2
-        "list.invalidItemForeground": "#{{ red }}", //8
-        "list.errorForeground": "#{{ red }}", //8
-        "list.warningForeground": "#{{ yellow }}", //A
+        "list.invalidItemForeground": "#{{ error }}", //8
+        "list.errorForeground": "#{{ error }}", //8
+        "list.warningForeground": "#{{ warning }}", //A
         "listFilterWidget.background": "#{{ base }}", //0
         // "listFilterWidget.outline": "#f00",
-        "listFilterWidget.noMatchesOutline": "#{{ red }}", //8
+        "listFilterWidget.noMatchesOutline": "#{{ error }}", //8
         "list.filterMatchBackground": "#{{ shade }}", //2
         // "list.filterMatchBorder": "#f00",
         "tree.indentGuidesStroke": "#{{ text }}", //5
@@ -116,7 +116,7 @@
         "activityBar.foreground": "#{{ text }}", //5
         "activityBar.inactiveForeground": "#{{ subtle }}", //3
         // "activityBar.border": "#f00", //0
-        "activityBarBadge.background": "#{{ blue }}", //D
+        "activityBarBadge.background": "#{{ primary }}", //D
         "activityBarBadge.foreground": "#{{ shade }}", //7
         // "activityBar.activeBorder": "#f00",
         "activityBar.activeBackground": "#{{ shade }}", //2
@@ -133,19 +133,19 @@
         // "sidebarSectionHeader.border": "#f00",
 
         //Minimap
-        "minimap.findMatchHighlight": "#{{ yellow }}6f", //A
+        "minimap.findMatchHighlight": "#{{ warning }}6f", //A
         "minimap.selectionHighlight": "#{{ shade }}6f", //2
-        "minimap.errorHighlight": "#{{ red }}", //8
-        "minimap.warningHighlight": "#{{ yellow }}", //A
+        "minimap.errorHighlight": "#{{ error }}", //8
+        "minimap.warningHighlight": "#{{ warning }}", //A
         "minimap.background": "#{{ base }}", //0
         "minimap.selectionOccurrenceHighlight": "#{{ subtle }}", //3
         // "minimap.foregroundOpacity": "#ff0000",
         // "minimapSlider.background": "#f00",
         // "minimapSlider.hoverBackground": "#f00",
         // "minimapSlider.activeBackground": "#f00",
-        "minimapGutter.addedBackground": "#{{ green }}", //B
-        "minimapGutter.modifiedBackground": "#{{ purple }}", //E
-        "minimapGutter.deletedBackground": "#{{ red }}", //8
+        "minimapGutter.addedBackground": "#{{ success }}", //B
+        "minimapGutter.modifiedBackground": "#{{ alternate }}", //E
+        "minimapGutter.deletedBackground": "#{{ error }}", //8
 
         // Editor Groups & Tabs
         // Below is no longer supported as of 1.24
@@ -181,10 +181,10 @@
         // "tab.unfocusedHoverForeground": "#ff0000",
         // "tab.hoverBorder": "#f00",
         // "tab.unfocusedHoverBorder": "#f00",
-        "tab.activeModifiedBorder": "#{{ blue }}", //D
-        "tab.inactiveModifiedBorder": "#{{ blue }}", //D
-        "tab.unfocusedActiveModifiedBorder": "#{{ blue }}", //D
-        "tab.unfocusedInactiveModifiedBorder": "#{{ blue }}", //D
+        "tab.activeModifiedBorder": "#{{ primary }}", //D
+        "tab.inactiveModifiedBorder": "#{{ primary }}", //D
+        "tab.unfocusedActiveModifiedBorder": "#{{ primary }}", //D
+        "tab.unfocusedInactiveModifiedBorder": "#{{ primary }}", //D
         "editorPane.background": "#{{ base }}", //0
         // "sideBySideEditor.horizontalBorder": "#ff0000",
         // "sideBySideEditor.verticalBorder": "#ff0000",
@@ -205,13 +205,13 @@
         // "editor.wordHighlightBorder": "#f00".
         "editor.wordHighlightStrongBackground": "#{{ subtle }}6f", //3
         // "editor.wordHighlightStrongBorder": "#f00",
-        "editor.findMatchBackground": "#{{ yellow }}6f", //A
+        "editor.findMatchBackground": "#{{ warning }}6f", //A
         "editor.findMatchHighlightBackground": "#{{ orange }}6f", //9
         "editor.findRangeHighlightBackground": "#{{ container }}6f", //1
         // "editor.findMatchBorder": "#f00",
         // "editor.findMatchHighlightBorder": "#f00",
         // "editor.findRangeHighlightBorder": "#f00",
-        "searchEditor.findMatchBackground": "#{{ yellow }}6f", //A
+        "searchEditor.findMatchBackground": "#{{ warning }}6f", //A
         // "searchEditor.findMatchBorder": "#ff0000",
         // "searchEditor.textInputBorder": "#ff0000",
         "editor.hoverHighlightBackground": "#{{ shade }}6f", //2
@@ -219,7 +219,7 @@
         // "editorUnicodeHighlight.border": "#ff0000",
         // "editorUnicodeHighlight.background": "#ff0000",
         // "editor.lineHighlightBorder": "#f00",
-        "editorLink.activeForeground": "#{{ blue }}", //D
+        "editorLink.activeForeground": "#{{ primary }}", //D
         "editor.rangeHighlightBackground": "#{{ container }}6f", //1
         // "editor.rangeHighlightBorder": "#f00",
         // "editor.symbolHighlightBackground": "#ff0000",
@@ -238,19 +238,19 @@
         /// CodeLens
         "editorCodeLens.foreground": "#{{ shade }}", //2
         /// Lightbulb
-        "editorLightBulb.foreground": "#{{ yellow }}", //A
-        "editorLightBulbAutoFix.foreground": "#{{ blue }}", //D
+        "editorLightBulb.foreground": "#{{ warning }}", //A
+        "editorLightBulbAutoFix.foreground": "#{{ primary }}", //D
         /// Bracket matches
         "editorBracketMatch.background": "#{{ shade }}", //2
         // "editorBracketMatch.border": "#f00",
         /// Bracket pair colorization
-        "editorBracketHighlight.foreground1": "#{{ red }}", //8
+        "editorBracketHighlight.foreground1": "#{{ error }}", //8
         "editorBracketHighlight.foreground2": "#{{ orange }}", //9
-        "editorBracketHighlight.foreground3": "#{{ yellow }}", //A
-        "editorBracketHighlight.foreground4": "#{{ green }}", //B
-        "editorBracketHighlight.foreground5": "#{{ blue }}", //D
-        "editorBracketHighlight.foreground6": "#{{ purple }}", //E
-        "editorBracketHighlight.unexpectedBracket.foreground": "#{{ alternate }}", //F
+        "editorBracketHighlight.foreground3": "#{{ warning }}", //A
+        "editorBracketHighlight.foreground4": "#{{ success }}", //B
+        "editorBracketHighlight.foreground5": "#{{ primary }}", //D
+        "editorBracketHighlight.foreground6": "#{{ alternate }}", //E
+        "editorBracketHighlight.unexpectedBracket.foreground": "#{{ error }}", //F
         /// Bracket pair guides
         // "editorBracketPairGuide.activeBackground1": "#ff0000",
         // "editorBracketPairGuide.activeBackground2": "#ff0000",
@@ -269,54 +269,54 @@
         /// Overview ruler
         // "editorOverviewRuler.background": "#ff0000",
         // "editorOverviewRuler.border": "#f00",
-        "editorOverviewRuler.findMatchForeground": "#{{ yellow }}6f", //A
+        "editorOverviewRuler.findMatchForeground": "#{{ warning }}6f", //A
         "editorOverviewRuler.rangeHighlightForeground": "#{{ subtle }}6f", //3
         "editorOverviewRuler.selectionHighlightForeground": "#{{ shade }}6f", //2
         "editorOverviewRuler.wordHighlightForeground": "#{{ shade }}6f", //7
-        "editorOverviewRuler.wordHighlightStrongForeground": "#{{ blue }}6f", //D
-        "editorOverviewRuler.modifiedForeground": "#{{ purple }}", //E
-        "editorOverviewRuler.addedForeground": "#{{ green }}", //B
-        "editorOverviewRuler.deletedForeground": "#{{ red }}", //8
-        "editorOverviewRuler.errorForeground": "#{{ red }}", //8
-        "editorOverviewRuler.warningForeground": "#{{ yellow }}", //A
+        "editorOverviewRuler.wordHighlightStrongForeground": "#{{ primary }}6f", //D
+        "editorOverviewRuler.modifiedForeground": "#{{ alternate }}", //E
+        "editorOverviewRuler.addedForeground": "#{{ success }}", //B
+        "editorOverviewRuler.deletedForeground": "#{{ error }}", //8
+        "editorOverviewRuler.errorForeground": "#{{ error }}", //8
+        "editorOverviewRuler.warningForeground": "#{{ warning }}", //A
         "editorOverviewRuler.infoForeground": "#{{ cyan }}", //C
         "editorOverviewRuler.bracketMatchForeground": "#{{ text | smartLighten 0.2 }}", //6
         /// Errors and warnings
-        "editorError.foreground": "#{{ red }}", //8
-        // "editorError.background": "#{{ red }}6f", //8
+        "editorError.foreground": "#{{ error }}", //8
+        // "editorError.background": "#{{ error }}6f", //8
         // "editorError.border": "",
-        "editorWarning.foreground": "#{{ yellow }}", //A
-        // "editorWarning.background": "#{{ yellow }}6f", //A
+        "editorWarning.foreground": "#{{ warning }}", //A
+        // "editorWarning.background": "#{{ warning }}6f", //A
         // "editorWarning.border": "#f00", 
         "editorInfo.foreground": "#{{ cyan }}", //C
         // "editorInfo.background": "#{{ cyan }}6f", //C
         // "editorInfo.border": "",
-        "editorHint.foreground": "#{{ blue }}", //D
+        "editorHint.foreground": "#{{ primary }}", //D
         // "editorHint.border": "#f00",
-        "problemsErrorIcon.foreground": "#{{ red }}", //8
-        "problemsWarningIcon.foreground": "#{{ yellow }}", //A
+        "problemsErrorIcon.foreground": "#{{ error }}", //8
+        "problemsWarningIcon.foreground": "#{{ warning }}", //A
         "problemsInfoIcon.foreground": "#{{ cyan }}", //C
         /// Unused source code
         // "editorUnnecessaryCode.border": "#f00",
         // "editorUnnecessaryCode.opacity": "#f00",
         /// Gutter
         "editorGutter.background": "#{{ base }}", //0
-        "editorGutter.modifiedBackground": "#{{ purple }}", //E
-        "editorGutter.addedBackground": "#{{ green }}", //B
-        "editorGutter.deletedBackground": "#{{ red }}", //8
+        "editorGutter.modifiedBackground": "#{{ alternate }}", //E
+        "editorGutter.addedBackground": "#{{ success }}", //B
+        "editorGutter.deletedBackground": "#{{ error }}", //8
         "editorGutter.commentRangeForeground": "#{{ subtle | smartLighten 0.2 }}", //4
         "editorGutter.foldingControlForeground": "#{{ text }}", //5
-        // "editorCommentsWidget.resolvedBorder": "#{{ green }}", //B
-        // "editorCommentsWidget.unresolvedBorder": "#{{ red }}", //8
+        // "editorCommentsWidget.resolvedBorder": "#{{ success }}", //B
+        // "editorCommentsWidget.unresolvedBorder": "#{{ error }}", //8
         // "editorCommentsWidget.rangeBackground": "#{{ container }}", //1
         // "editorCommentsWidget.rangeBorder": "#ff0000",
         // "editorCommentsWidget.rangeActiveBackground": "#{{ shade }}", //2
         // "editorCommentsWidget.rangeActiveBorder": "#ff0000",
 
         // Diff editor colors
-        "diffEditor.insertedTextBackground": "#{{ green }}20",
+        "diffEditor.insertedTextBackground": "#{{ success }}20",
         // "diffEditor.insertedTextBorder": "#f00",
-        "diffEditor.removedTextBackground": "#{{ red }}20",
+        "diffEditor.removedTextBackground": "#{{ error }}20",
         // "diffEditor.removedTextBorder": "#f00",
         // "diffEditor.border": "#f00",
         "diffEditor.diagonalFill": "#{{ shade }}", //2
@@ -336,7 +336,7 @@
         // "editorSuggestWidget.border": "#f00",
         "editorSuggestWidget.foreground": "#{{ text }}", //5
         "editorSuggestWidget.focusHighlightForeground": "#{{ shade }}", //7
-        "editorSuggestWidget.highlightForeground": "#{{ blue }}", //D
+        "editorSuggestWidget.highlightForeground": "#{{ primary }}", //D
         "editorSuggestWidget.selectedBackground": "#{{ shade }}", //2
         "editorSuggestWidget.selectedForeground": "#{{ text | smartLighten 0.2 }}", //6
         // "editorSuggestWidget.selectedIconForeground": "#ff0000",
@@ -351,11 +351,11 @@
         "debugExceptionWidget.background": "#{{ container }}", //1
         // "debugExceptionWidget.border": "#f00",
         "editorMarkerNavigation.background": "#{{ container }}", //1
-        "editorMarkerNavigationError.background": "#{{ red }}", //8
-        "editorMarkerNavigationWarning.background": "#{{ yellow }}", //A
-        "editorMarkerNavigationInfo.background": "#{{ blue }}", //D
-        "editorMarkerNavigationError.headerBackground": "#{{ red }}20", //8
-        "editorMarkerNavigationWarning.headerBackground": "#{{ yellow }}20", //A
+        "editorMarkerNavigationError.background": "#{{ error }}", //8
+        "editorMarkerNavigationWarning.background": "#{{ warning }}", //A
+        "editorMarkerNavigationInfo.background": "#{{ primary }}", //D
+        "editorMarkerNavigationError.headerBackground": "#{{ error }}20", //8
+        "editorMarkerNavigationWarning.headerBackground": "#{{ warning }}20", //A
         "editorMarkerNavigationInfo.headerBackground": "#{{ cyan }}20", //C
 
         // Peek view colors
@@ -375,16 +375,16 @@
         "peekViewTitleLabel.foreground": "#{{ text }}", //5
 
         // Merge conflicts colors
-        "merge.currentContentBackground": "#{{ blue }}40", //D
-        "merge.currentHeaderBackground": "#{{ blue }}40", //D
-        "merge.incomingContentBackground": "#{{ green }}60", //B
-        "merge.incomingHeaderBackground": "#{{ green }}60", //B
+        "merge.currentContentBackground": "#{{ primary }}40", //D
+        "merge.currentHeaderBackground": "#{{ primary }}40", //D
+        "merge.incomingContentBackground": "#{{ success }}60", //B
+        "merge.incomingHeaderBackground": "#{{ success }}60", //B
         // "merge.border": "#f00",
         // "merge.commonContentBackground": "#f00",
         // "merge.commonHeaderBackground": "#f00",
-        "editorOverviewRuler.currentContentForeground": "#{{ blue }}", //D
-        "editorOverviewRuler.incomingContentForeground": "#{{ green }}", //B
-        "editorOverviewRuler.commonContentForeground": "#{{ alternate }}", //F
+        "editorOverviewRuler.currentContentForeground": "#{{ primary }}", //D
+        "editorOverviewRuler.incomingContentForeground": "#{{ success }}", //B
+        "editorOverviewRuler.commonContentForeground": "#{{ error }}", //F
         // "mergeEditor.change.background": "#ff0000",
         // "mergeEditor.change.word.background": "#ff0000",
         // "mergeEditor.conflict.unhandledUnfocused.border": "#ff0000",
@@ -412,25 +412,25 @@
         // "panelSectionHeader.border": "#ff0000",
 
         // Status Bar colors
-        "statusBar.background": "#{{ blue }}", //D
+        "statusBar.background": "#{{ primary }}", //D
         "statusBar.foreground": "#{{ shade }}", //7
         // "statusBar.border": "#f00",
         "statusBar.debuggingBackground": "#{{ orange }}", //9
         "statusBar.debuggingForeground": "#{{ shade }}", //7
         // "statusBar.debuggingBorder": "",
-        "statusBar.noFolderBackground": "#{{ purple }}", //E
+        "statusBar.noFolderBackground": "#{{ alternate }}", //E
         "statusBar.noFolderForeground": "#{{ shade }}", //7
         // "statusBar.noFolderBorder": "",
         "statusBarItem.activeBackground": "#{{ subtle }}", //3
         "statusBarItem.hoverBackground": "#{{ shade }}", //2
         "statusBarItem.prominentForeground": "#{{ shade }}", //7
-        "statusBarItem.prominentBackground": "#{{ purple }}", //E
-        "statusBarItem.prominentHoverBackground": "#{{ red }}", //8
-        "statusBarItem.remoteBackground": "#{{ green }}", //B
+        "statusBarItem.prominentBackground": "#{{ alternate }}", //E
+        "statusBarItem.prominentHoverBackground": "#{{ error }}", //8
+        "statusBarItem.remoteBackground": "#{{ success }}", //B
         "statusBarItem.remoteForeground": "#{{ shade }}", //7
-        "statusBarItem.errorBackground": "#{{ red }}", //8
+        "statusBarItem.errorBackground": "#{{ error }}", //8
         "statusBarItem.errorForeground": "#{{ shade }}", //7
-        "statusBarItem.warningBackground": "#{{ yellow }}", //A
+        "statusBarItem.warningBackground": "#{{ warning }}", //A
         "statusBarItem.warningForeground": "#{{ shade }}", //7
         // "statusBarItem.compactHoverBackground": "#ff0000",
         // "statusBarItem.focusBorder": "#ff0000",
@@ -472,38 +472,38 @@
         "notifications.foreground": "#{{ text }}", //5
         "notifications.background": "#{{ shade }}", //2
         // "notifications.border": "",
-        "notificationLink.foreground": "#{{ blue }}", //D
-        "notificationsErrorIcon.foreground": "#{{ red }}", //8
-        "notificationsWarningIcon.foreground": "#{{ yellow }}", //A
-        "notificationsInfoIcon.foreground": "#{{ blue }}", //D
+        "notificationLink.foreground": "#{{ primary }}", //D
+        "notificationsErrorIcon.foreground": "#{{ error }}", //8
+        "notificationsWarningIcon.foreground": "#{{ warning }}", //A
+        "notificationsInfoIcon.foreground": "#{{ primary }}", //D
 
         // Below is no longer supported as of 1.21
         "notification.background": "#{{ shade }}", //2
         "notification.foreground": "#{{ text }}", //5
-        "notification.buttonBackground": "#{{ blue }}", //D
+        "notification.buttonBackground": "#{{ primary }}", //D
         "notification.buttonHoverBackground": "#{{ shade }}", //2
         "notification.buttonForeground": "#{{ shade }}", //7
         "notification.infoBackground": "#{{ cyan }}", //C
         "notification.infoForeground": "#{{ shade }}", //7
-        "notification.warningBackground": "#{{ yellow }}", //A
+        "notification.warningBackground": "#{{ warning }}", //A
         "notification.warningForeground": "#{{ shade }}", //7
-        "notification.errorBackground": "#{{ red }}", //8
+        "notification.errorBackground": "#{{ error }}", //8
         "notification.errorForeground": "#{{ shade }}", //7
         // Above is no longer supported as of 1.21
 
         // Banner colors
         "banner.background": "#{{ shade }}", //2
         "banner.foreground": "#{{ text }}", //5
-        "banner.iconForeground": "#{{ blue }}", //D
+        "banner.iconForeground": "#{{ primary }}", //D
 
         // Extensions colors
-        "extensionButton.prominentBackground": "#{{ green }}", //B
+        "extensionButton.prominentBackground": "#{{ success }}", //B
         "extensionButton.prominentForeground": "#{{ shade }}", //7
         "extensionButton.prominentHoverBackground": "#{{ shade }}", //2
         "extensionBadge.remoteBackground": "#{{ orange }}", //9
         "extensionBadge.remoteForeground": "#{{ shade }}", //7
-        "extensionIcon.starForeground": "#{{ yellow }}", //A
-        "extensionIcon.verifiedForeground": "#{{ blue }}", //D
+        "extensionIcon.starForeground": "#{{ warning }}", //A
+        "extensionIcon.verifiedForeground": "#{{ primary }}", //D
         "extensionIcon.preReleaseForeground": "#{{ orange }}", //9
         // "extensionIcon.sponsorForeground": "#ff0000",
 
@@ -532,19 +532,19 @@
         // "terminal.border": "#ff0000",
         "terminal.foreground": "#{{ text }}", //5
         "terminal.ansiBlack": "#{{ base }}", //0
-        "terminal.ansiRed": "#{{ red }}", //8
-        "terminal.ansiGreen": "#{{ green }}", //B
-        "terminal.ansiYellow": "#{{ yellow }}", //A
-        "terminal.ansiBlue": "#{{ blue }}", //D
-        "terminal.ansiMagenta": "#{{ purple }}", //E
+        "terminal.ansiRed": "#{{ error }}", //8
+        "terminal.ansiGreen": "#{{ success }}", //B
+        "terminal.ansiYellow": "#{{ warning }}", //A
+        "terminal.ansiBlue": "#{{ primary }}", //D
+        "terminal.ansiMagenta": "#{{ alternate }}", //E
         "terminal.ansiCyan": "#{{ cyan }}", //C
         "terminal.ansiWhite": "#{{ text }}", //5
         "terminal.ansiBrightBlack": "#{{ subtle }}", //3
-        "terminal.ansiBrightRed": "#{{ red }}", //8
-        "terminal.ansiBrightGreen": "#{{ green }}", //B
-        "terminal.ansiBrightYellow": "#{{ yellow }}", //A
-        "terminal.ansiBrightBlue": "#{{ blue }}", //D
-        "terminal.ansiBrightMagenta": "#{{ purple }}", //E
+        "terminal.ansiBrightRed": "#{{ error }}", //8
+        "terminal.ansiBrightGreen": "#{{ success }}", //B
+        "terminal.ansiBrightYellow": "#{{ warning }}", //A
+        "terminal.ansiBrightBlue": "#{{ primary }}", //D
+        "terminal.ansiBrightMagenta": "#{{ alternate }}", //E
         "terminal.ansiBrightCyan": "#{{ cyan }}", //C
         "terminal.ansiBrightWhite": "#{{ shade }}", //7
         // "terminal.selectionBackground": "#f0f",
@@ -570,29 +570,29 @@
         // "debugView.exceptionLabelForeground": "#ff0000",
         // "debugView.exceptionLabelBackground": "#ff0000",
         "debugView.stateLabelForeground": "#{{ shade }}", //7
-        "debugView.stateLabelBackground": "#{{ blue }}", //D
-        "debugView.valueChangedHighlight": "#{{ blue }}", //D
-        "debugTokenExpression.name": "#{{ purple }}", //E
+        "debugView.stateLabelBackground": "#{{ primary }}", //D
+        "debugView.valueChangedHighlight": "#{{ primary }}", //D
+        "debugTokenExpression.name": "#{{ alternate }}", //E
         "debugTokenExpression.value": "#{{ text }}", //5
-        "debugTokenExpression.string": "#{{ green }}", //B
+        "debugTokenExpression.string": "#{{ success }}", //B
         "debugTokenExpression.boolean": "#{{ orange }}", //9
         "debugTokenExpression.number": "#{{ orange }}", //9
-        "debugTokenExpression.error": "#{{ red }}", //8
+        "debugTokenExpression.error": "#{{ error }}", //8
 
         // Testing colors
-        "testing.iconFailed": "#{{ red }}", //8
-        "testing.iconErrored": "#{{ alternate }}", //F
-        "testing.iconPassed": "#{{ green }}", //B
+        "testing.iconFailed": "#{{ error }}", //8
+        "testing.iconErrored": "#{{ error }}", //F
+        "testing.iconPassed": "#{{ success }}", //B
         "testing.runAction": "#{{ subtle | smartLighten 0.2 }}", //4
-        "testing.iconQueued": "#{{ yellow }}", //A
+        "testing.iconQueued": "#{{ warning }}", //A
         "testing.iconUnset": "#{{ subtle | smartLighten 0.2 }}", //4
-        "testing.iconSkipped": "#{{ purple }}", //E
+        "testing.iconSkipped": "#{{ alternate }}", //E
         // "testing.peekBorder": "#ff0000",
         "testing.peekHeaderBackground": "#{{ container }}", //1
         "testing.message.error.decorationForeground": "#{{ text }}", //5
-        "testing.message.error.lineBackground": "#{{ red }}20", //8
+        "testing.message.error.lineBackground": "#{{ error }}20", //8
         "testing.message.info.decorationForeground": "#{{ text }}", //5
-        "testing.message.info.lineBackground": "#{{ blue }}20", //D
+        "testing.message.info.lineBackground": "#{{ primary }}20", //D
 
         // Welcome page colors
         "welcomePage.background": "#{{ base }}", //0
@@ -601,7 +601,7 @@
         "welcomePage.buttonHoverBackground": "#{{ shade }}", //2
         // Above is no longer supported as of 1.63
         "welcomePage.progress.background": "#{{ subtle }}", //3
-        "welcomePage.progress.foreground": "#{{ blue }}", //D
+        "welcomePage.progress.foreground": "#{{ primary }}", //D
         "welcomePage.tileBackground": "#{{ container }}", //1
         "welcomePage.tileHoverBackground": "#{{ shade }}", //2
         // "welcomePage.tileShadow": "#ff0000",
@@ -611,22 +611,22 @@
         // "scm.providerBorder": "#ff0000",
 
         // Git colors
-        "gitDecoration.addedResourceForeground": "#{{ green }}", //B
-        "gitDecoration.modifiedResourceForeground": "#{{ purple }}", //E
-        "gitDecoration.deletedResourceForeground": "#{{ red }}", //8
+        "gitDecoration.addedResourceForeground": "#{{ success }}", //B
+        "gitDecoration.modifiedResourceForeground": "#{{ alternate }}", //E
+        "gitDecoration.deletedResourceForeground": "#{{ error }}", //8
         "gitDecoration.renamedResourceForeground": "#{{ cyan }}", //C
-        "gitDecoration.stageModifiedResourceForeground": "#{{ purple }}", //E
-        "gitDecoration.stageDeletedResourceForeground": "#{{ red }}", //8
+        "gitDecoration.stageModifiedResourceForeground": "#{{ alternate }}", //E
+        "gitDecoration.stageDeletedResourceForeground": "#{{ error }}", //8
         "gitDecoration.untrackedResourceForeground": "#{{ orange }}", //9
         "gitDecoration.ignoredResourceForeground": "#{{ subtle }}", //3
-        "gitDecoration.conflictingResourceForeground": "#{{ yellow }}", //A
-        "gitDecoration.submoduleResourceForeground": "#{{ alternate }}", //F
+        "gitDecoration.conflictingResourceForeground": "#{{ warning }}", //A
+        "gitDecoration.submoduleResourceForeground": "#{{ error }}", //F
 
         // Settings Editor colors
         "settings.headerForeground": "#{{ text }}", //5
-        "settings.modifiedItemIndicator": "#{{ blue }}", //D
+        "settings.modifiedItemIndicator": "#{{ primary }}", //D
         // Below was introduced temporarily in 1.26
-        "settings.modifiedItemForeground": "#{{ green }}", //B
+        "settings.modifiedItemForeground": "#{{ success }}", //B
         // Above was introduced temporarily in 1.26
         "settings.dropdownBackground": "#{{ container }}", //1
         "settings.dropdownForeground": "#{{ text }}", //5
@@ -663,24 +663,24 @@
         // Symbol Icons colors
         "symbolIcon.arrayForeground": "#{{ text }}", //5
         "symbolIcon.booleanForeground": "#{{ orange }}", //9
-        "symbolIcon.classForeground": "#{{ yellow }}", //A
+        "symbolIcon.classForeground": "#{{ warning }}", //A
         "symbolIcon.colorForeground": "#f0f",
         "symbolIcon.constantForeground": "#{{ orange }}", //9
-        "symbolIcon.constructorForeground": "#{{ blue }}", //D
+        "symbolIcon.constructorForeground": "#{{ primary }}", //D
         "symbolIcon.enumeratorForeground": "#{{ orange }}", //9
-        "symbolIcon.enumeratorMemberForeground": "#{{ blue }}", //D
-        "symbolIcon.eventForeground": "#{{ yellow }}", //A
-        "symbolIcon.fieldForeground": "#{{ red }}", //8
+        "symbolIcon.enumeratorMemberForeground": "#{{ primary }}", //D
+        "symbolIcon.eventForeground": "#{{ warning }}", //A
+        "symbolIcon.fieldForeground": "#{{ error }}", //8
         "symbolIcon.fileForeground": "#{{ text }}", //5
         "symbolIcon.folderForeground": "#{{ text }}", //5
-        "symbolIcon.functionForeground": "#{{ blue }}", //D,
-        "symbolIcon.interfaceForeground": "#{{ blue }}", //D
+        "symbolIcon.functionForeground": "#{{ primary }}", //D,
+        "symbolIcon.interfaceForeground": "#{{ primary }}", //D
         "symbolIcon.keyForeground": "#f0f",
-        "symbolIcon.keywordForeground": "#{{ purple }}", //E
-        "symbolIcon.methodForeground": "#{{ blue }}", //D
+        "symbolIcon.keywordForeground": "#{{ alternate }}", //E
+        "symbolIcon.methodForeground": "#{{ primary }}", //D
         "symbolIcon.moduleForeground": "#{{ text }}", //5
         "symbolIcon.namespaceForeground": "#{{ text }}", //5
-        "symbolIcon.nullForeground": "#{{ alternate }}", //F
+        "symbolIcon.nullForeground": "#{{ error }}", //F
         "symbolIcon.numberForeground": "#{{ orange }}", //9
         "symbolIcon.objectForeground": "#f0f",
         "symbolIcon.operatorForeground": "#f0f",
@@ -688,32 +688,32 @@
         "symbolIcon.propertyForeground": "#{{ text }}", //5
         "symbolIcon.referenceForeground": "#f0f",
         "symbolIcon.snippetForeground": "#{{ text }}", //5
-        "symbolIcon.stringForeground": "#{{ green }}", //B
-        "symbolIcon.structForeground": "#{{ yellow }}", //A
+        "symbolIcon.stringForeground": "#{{ success }}", //B
+        "symbolIcon.structForeground": "#{{ warning }}", //A
         "symbolIcon.textForeground": "#{{ text }}", //5
         "symbolIcon.typeParameterForeground": "#f0f",
         "symbolIcon.unitForeground": "#f0f",
-        "symbolIcon.variableForeground": "#{{ red }}", //8
+        "symbolIcon.variableForeground": "#{{ error }}", //8
 
         // Debug Icons colors
-        "debugIcon.breakpointForeground": "#{{ red }}", //8
+        "debugIcon.breakpointForeground": "#{{ error }}", //8
         "debugIcon.breakpointDisabledForeground": "#{{ subtle | smartLighten 0.2 }}", //4
         "debugIcon.breakpointUnverifiedForeground": "#{{ shade }}", //2
-        "debugIcon.breakpointCurrentStackframeForeground": "#{{ yellow }}", //A
-        "debugIcon.breakpointStackframeForeground": "#{{ alternate }}", //F
-        "debugIcon.startForeground": "#{{ green }}", //B
-        "debugIcon.pauseForeground": "#{{ blue }}", //D
-        "debugIcon.stopForeground": "#{{ red }}", //8
-        "debugIcon.disconnectForeground": "#{{ red }}", //8
-        "debugIcon.restartForeground": "#{{ green }}", //B
-        "debugIcon.stepOverForeground": "#{{ blue }}", //D
+        "debugIcon.breakpointCurrentStackframeForeground": "#{{ warning }}", //A
+        "debugIcon.breakpointStackframeForeground": "#{{ error }}", //F
+        "debugIcon.startForeground": "#{{ success }}", //B
+        "debugIcon.pauseForeground": "#{{ primary }}", //D
+        "debugIcon.stopForeground": "#{{ error }}", //8
+        "debugIcon.disconnectForeground": "#{{ error }}", //8
+        "debugIcon.restartForeground": "#{{ success }}", //B
+        "debugIcon.stepOverForeground": "#{{ primary }}", //D
         "debugIcon.stepIntoForeground": "#{{ cyan }}", //C
-        "debugIcon.stepOutForeground": "#{{ purple }}", //E
-        "debugIcon.continueForeground": "#{{ green }}", //B
-        "debugIcon.stepBackForeground": "#{{ alternate }}", //F
+        "debugIcon.stepOutForeground": "#{{ alternate }}", //E
+        "debugIcon.continueForeground": "#{{ success }}", //B
+        "debugIcon.stepBackForeground": "#{{ error }}", //F
         "debugConsole.infoForeground": "#{{ text }}", //5
-        "debugConsole.warningForeground": "#{{ yellow }}", //A
-        "debugConsole.errorForeground": "#{{ red }}", //8
+        "debugConsole.warningForeground": "#{{ warning }}", //A
+        "debugConsole.errorForeground": "#{{ error }}", //8
         "debugConsole.sourceForeground": "#{{ text }}", //5
         "debugConsoleInputIcon.foreground": "#{{ text }}", //5
 
@@ -726,8 +726,8 @@
         "notebook.cellToolbarSeparator": "#{{ shade }}", //2
         "notebook.cellEditorBackground": "#{{ base }}", //0
         "notebook.focusedCellBackground": "#{{ shade }}", //2
-        "notebook.focusedCellBorder": "#{{ blue }}", //D
-        "notebook.focusedEditorBorder": "#{{ blue }}", //D
+        "notebook.focusedCellBorder": "#{{ primary }}", //D
+        "notebook.focusedEditorBorder": "#{{ primary }}", //D
         "notebook.inactiveFocusedCellBorder": "#{{ subtle }}", //3
         // "notebook.inactiveSelectedCellBorder": "#ff0000",
         // "notebook.outputContainerBackgroundColor": "#ff0000",
@@ -738,19 +738,19 @@
         // "notebookScrollbarSlider.activeBackground": "#ff0000",
         // "notebookScrollbarSlider.background": "#ff0000",
         // "notebookScrollbarSlider.hoverBackground": "#ff0000",
-        "notebookStatusErrorIcon.foreground": "#{{ red }}", //8
+        "notebookStatusErrorIcon.foreground": "#{{ error }}", //8
         "notebookStatusRunningIcon.foreground": "#{{ cyan }}", //C
-        "notebookStatusSuccessIcon.foreground": "#{{ green }}", //B
+        "notebookStatusSuccessIcon.foreground": "#{{ success }}", //B
 
         // Chart colors
         "charts.foreground": "#{{ text }}", //5
         "charts.lines": "#{{ text }}", //5
-        "charts.red": "#{{ red }}", //8
-        "charts.blue": "#{{ blue }}", //D
-        "charts.yellow": "#{{ yellow }}", //A
+        "charts.red": "#{{ error }}", //8
+        "charts.blue": "#{{ primary }}", //D
+        "charts.yellow": "#{{ warning }}", //A
         "charts.orange": "#{{ orange }}", //9
-        "charts.green": "#{{ green }}", //B
-        "charts.purple": "#{{ purple }}", //E
+        "charts.green": "#{{ success }}", //B
+        "charts.purple": "#{{ alternate }}", //E
 
         // Ports Colors
         "ports.iconRunningProcessForeground": "#{{ orange }}" //9
@@ -777,7 +777,7 @@
                 "variable.parameter"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -786,7 +786,7 @@
                 "variable.other.object.property"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -795,7 +795,7 @@
                 "constant.other.color"
             ],
             "settings": {
-                "foreground": "#{{ green }}" //B
+                "foreground": "#{{ success }}" //B
             }
         },
         {
@@ -805,7 +805,7 @@
                 "invalid.illegal"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -814,7 +814,7 @@
                 "invalid.deprecated"
             ],
             "settings": {
-                "foreground": "#{{ alternate }}" //F
+                "foreground": "#{{ error }}" //F
             }
         },
         {
@@ -824,7 +824,7 @@
                 "storage.modifier"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -837,7 +837,7 @@
                 "keyword.control.as"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -857,7 +857,7 @@
                 "storage.type.ts"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -876,7 +876,7 @@
                 "storage.type.function"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -905,7 +905,7 @@
                 "variable.interpolation"
             ],
             "settings": {
-                "foreground": "#{{ alternate }}" //F
+                "foreground": "#{{ error }}" //F
             }
         },
         {
@@ -916,7 +916,7 @@
                 "markup.deleted.git_gutter"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -929,7 +929,7 @@
                 "keyword.other.special-method"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -938,7 +938,7 @@
                 "meta.block variable.other"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -948,7 +948,7 @@
                 "string.other.link"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -979,7 +979,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#{{ green }}" //B
+                "foreground": "#{{ success }}" //B
             }
         },
         {
@@ -995,7 +995,7 @@
                 "support.type.sys-types"
             ],
             "settings": {
-                "foreground": "#{{ yellow }}" //A
+                "foreground": "#{{ warning }}" //A
             }
         },
         {
@@ -1006,7 +1006,7 @@
                 "storage.modifier.import"
             ],
             "settings": {
-                "foreground": "#{{ yellow }}" //A
+                "foreground": "#{{ warning }}" //A
             }
         },
         {
@@ -1015,7 +1015,7 @@
                 "entity.name.variable.field"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1049,7 +1049,7 @@
                 "variable.other.class.js"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -1059,7 +1059,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -1069,7 +1069,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1079,7 +1079,7 @@
                 "variable.function.constructor"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1088,7 +1088,7 @@
                 "entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1099,7 +1099,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#{{ yellow }}" //A
+                "foreground": "#{{ warning }}" //A
             }
         },
         {
@@ -1108,7 +1108,7 @@
                 "entity.other.attribute-name.class"
             ],
             "settings": {
-                "foreground": "#{{ yellow }}" //A
+                "foreground": "#{{ warning }}" //A
             }
         },
         {
@@ -1117,7 +1117,7 @@
                 "source.sass keyword.control"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1126,7 +1126,7 @@
                 "markup.inserted"
             ],
             "settings": {
-                "foreground": "#{{ green }}" //B
+                "foreground": "#{{ success }}" //B
             }
         },
         {
@@ -1135,7 +1135,7 @@
                 "markup.deleted"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -1144,7 +1144,7 @@
                 "markup.changed"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -1184,7 +1184,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#{{ blue }}" // D
+                "foreground": "#{{ primary }}" // D
             }
         },
         {
@@ -1194,7 +1194,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -1203,7 +1203,7 @@
                 "source.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1212,7 +1212,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1221,7 +1221,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1230,7 +1230,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1239,7 +1239,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1248,7 +1248,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1257,7 +1257,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1266,7 +1266,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1275,7 +1275,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1294,7 +1294,7 @@
                 "text.html.markdown markup.inline.raw.markdown"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -1323,7 +1323,7 @@
                 "markup.heading.markdown punctuation.definition.heading.markdown"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1333,7 +1333,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -1344,7 +1344,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -1359,7 +1359,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -1396,7 +1396,7 @@
                 "string.other.link.title.markdown"
             ],
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
@@ -1405,7 +1405,7 @@
                 "string.other.link.description.title.markdown"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -1414,7 +1414,7 @@
                 "constant.other.reference.link.markdown"
             ],
             "settings": {
-                "foreground": "#{{ yellow }}" //A
+                "foreground": "#{{ warning }}" //A
             }
         },
         {
@@ -1423,7 +1423,7 @@
                 "markup.raw.block"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -1451,7 +1451,7 @@
                 "variable.language.fenced.markdown"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
@@ -1460,7 +1460,7 @@
                 "variable.language.fenced.markdown"
             ],
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
@@ -1479,31 +1479,31 @@
                 "markup.table"
             ],
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         },
         {
             "scope": "token.info-token",
             "settings": {
-                "foreground": "#{{ blue }}" //D
+                "foreground": "#{{ primary }}" //D
             }
         },
         {
             "scope": "token.warn-token",
             "settings": {
-                "foreground": "#{{ yellow }}" //A
+                "foreground": "#{{ warning }}" //A
             }
         },
         {
             "scope": "token.error-token",
             "settings": {
-                "foreground": "#{{ red }}" //8
+                "foreground": "#{{ error }}" //8
             }
         },
         {
             "scope": "token.debug-token",
             "settings": {
-                "foreground": "#{{ purple }}" //E
+                "foreground": "#{{ alternate }}" //E
             }
         }
     ]
