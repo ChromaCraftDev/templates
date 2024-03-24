@@ -37,10 +37,10 @@
 
         // Button control
         "button.background": "#{{ primary }}", //D
-        "button.foreground": "#{{ shade }}", //7
+        "button.foreground": "#{{ container | smartLighten 0.2 }}", //7
         // "button.border": "#ff0000",
         "button.hoverBackground": "#{{ subtle | smartLighten 0.2 }}", //4
-        "button.secondaryForeground": "#{{ shade }}", //7
+        "button.secondaryForeground": "#{{ container | smartLighten 0.2 }}", //7
         "button.secondaryBackground": "#{{ alternate }}", //E
         "button.secondaryHoverBackground": "#{{ subtle | smartLighten 0.2 }}", //4
         "checkbox.background": "#{{ base }}", //0
@@ -87,10 +87,10 @@
         // Lists and trees
         "list.activeSelectionBackground": "#{{ shade }}", //2
         "list.activeSelectionForeground": "#{{ text }}", //5
-        "list.dropBackground": "#{{ shade }}", //7
+        "list.dropBackground": "#{{ container | smartLighten 0.2 }}", //7
         "list.focusBackground": "#{{ shade }}", //2
         "list.focusForeground": "#{{ text }}", //5
-        "list.highlightForeground": "#{{ shade }}", //7
+        "list.highlightForeground": "#{{ container | smartLighten 0.2 }}", //7
         "list.hoverBackground": "#{{ subtle }}", //3
         "list.hoverForeground": "#{{ text }}", //5
         "list.inactiveSelectionBackground": "#{{ shade }}", //2
@@ -110,14 +110,14 @@
         // Activity Bar
         "activityBar.background": "#{{ base }}", //0
         // Below is no longer supported as of 1.52
-        "activityBar.dropBackground": "#{{ shade }}", //7
+        "activityBar.dropBackground": "#{{ container | smartLighten 0.2 }}", //7
         // Above is no longer supported as of 1.52
         // "activityBar.dropBorder": "#ff0000",
         "activityBar.foreground": "#{{ text }}", //5
         "activityBar.inactiveForeground": "#{{ subtle }}", //3
         // "activityBar.border": "#f00", //0
         "activityBarBadge.background": "#{{ primary }}", //D
-        "activityBarBadge.foreground": "#{{ shade }}", //7
+        "activityBarBadge.foreground": "#{{ container | smartLighten 0.2 }}", //7
         // "activityBar.activeBorder": "#f00",
         "activityBar.activeBackground": "#{{ shade }}", //2
         // "activityBar.activeFocusBorder": "#ff0000",
@@ -159,7 +159,7 @@
         // "editorGroupHeader.border": "#ff0000",
         "editorGroup.emptyBackground": "#{{ base }}", //0
         // "editorGroup.focusedEmptyBorder": "#f00"
-        "editorGroup.dropIntoPromptForeground": "#{{ text | smartLighten 0.2 }}", //5
+        "editorGroup.dropIntoPromptForeground": "#{{ subtle | smartLighten 0.2 }}", //5
         "editorGroup.dropIntoPromptBackground": "#{{ base }}", //0
         // "editorGroup.dropIntoPromptBorder": "#ff0000",
         "tab.activeBackground": "#{{ base }}", //0
@@ -272,7 +272,7 @@
         "editorOverviewRuler.findMatchForeground": "#{{ warning }}6f", //A
         "editorOverviewRuler.rangeHighlightForeground": "#{{ subtle }}6f", //3
         "editorOverviewRuler.selectionHighlightForeground": "#{{ shade }}6f", //2
-        "editorOverviewRuler.wordHighlightForeground": "#{{ shade }}6f", //7
+        "editorOverviewRuler.wordHighlightForeground": "#{{ container | smartLighten 0.2 }}6f", //7
         "editorOverviewRuler.wordHighlightStrongForeground": "#{{ primary }}6f", //D
         "editorOverviewRuler.modifiedForeground": "#{{ alternate }}", //E
         "editorOverviewRuler.addedForeground": "#{{ success }}", //B
@@ -280,7 +280,7 @@
         "editorOverviewRuler.errorForeground": "#{{ error }}", //8
         "editorOverviewRuler.warningForeground": "#{{ warning }}", //A
         "editorOverviewRuler.infoForeground": "#{{ cyan }}", //C
-        "editorOverviewRuler.bracketMatchForeground": "#{{ text | smartLighten 0.2 }}", //6
+        "editorOverviewRuler.bracketMatchForeground": "#{{ subtle | smartLighten 0.2 }}", //6
         /// Errors and warnings
         "editorError.foreground": "#{{ error }}", //8
         // "editorError.background": "#{{ error }}6f", //8
@@ -335,10 +335,10 @@
         "editorSuggestWidget.background": "#{{ container }}", //1
         // "editorSuggestWidget.border": "#f00",
         "editorSuggestWidget.foreground": "#{{ text }}", //5
-        "editorSuggestWidget.focusHighlightForeground": "#{{ shade }}", //7
+        "editorSuggestWidget.focusHighlightForeground": "#{{ container | smartLighten 0.2 }}", //7
         "editorSuggestWidget.highlightForeground": "#{{ primary }}", //D
         "editorSuggestWidget.selectedBackground": "#{{ shade }}", //2
-        "editorSuggestWidget.selectedForeground": "#{{ text | smartLighten 0.2 }}", //6
+        "editorSuggestWidget.selectedForeground": "#{{ subtle | smartLighten 0.2 }}", //6
         // "editorSuggestWidget.selectedIconForeground": "#ff0000",
         // "editorSuggestWidgetStatus.foreground": "#ff0000",
         "editorHoverWidget.foreground": "#{{ text }}", //5
@@ -413,25 +413,25 @@
 
         // Status Bar colors
         "statusBar.background": "#{{ primary }}", //D
-        "statusBar.foreground": "#{{ shade }}", //7
+        "statusBar.foreground": "#{{ container | smartLighten 0.2 }}", //7
         // "statusBar.border": "#f00",
         "statusBar.debuggingBackground": "#{{ orange }}", //9
-        "statusBar.debuggingForeground": "#{{ shade }}", //7
+        "statusBar.debuggingForeground": "#{{ container | smartLighten 0.2 }}", //7
         // "statusBar.debuggingBorder": "",
         "statusBar.noFolderBackground": "#{{ alternate }}", //E
-        "statusBar.noFolderForeground": "#{{ shade }}", //7
+        "statusBar.noFolderForeground": "#{{ container | smartLighten 0.2 }}", //7
         // "statusBar.noFolderBorder": "",
         "statusBarItem.activeBackground": "#{{ subtle }}", //3
         "statusBarItem.hoverBackground": "#{{ shade }}", //2
-        "statusBarItem.prominentForeground": "#{{ shade }}", //7
+        "statusBarItem.prominentForeground": "#{{ container | smartLighten 0.2 }}", //7
         "statusBarItem.prominentBackground": "#{{ alternate }}", //E
         "statusBarItem.prominentHoverBackground": "#{{ error }}", //8
         "statusBarItem.remoteBackground": "#{{ success }}", //B
-        "statusBarItem.remoteForeground": "#{{ shade }}", //7
+        "statusBarItem.remoteForeground": "#{{ container | smartLighten 0.2 }}", //7
         "statusBarItem.errorBackground": "#{{ error }}", //8
-        "statusBarItem.errorForeground": "#{{ shade }}", //7
+        "statusBarItem.errorForeground": "#{{ container | smartLighten 0.2 }}", //7
         "statusBarItem.warningBackground": "#{{ warning }}", //A
-        "statusBarItem.warningForeground": "#{{ shade }}", //7
+        "statusBarItem.warningForeground": "#{{ container | smartLighten 0.2 }}", //7
         // "statusBarItem.compactHoverBackground": "#ff0000",
         // "statusBarItem.focusBorder": "#ff0000",
         // "statusBarItem.settingsProfilesForeground": "#ff0000",
@@ -454,12 +454,12 @@
         "menu.selectionForeground": "#{{ text }}", //5
         "menu.selectionBackground": "#{{ shade }}", //2
         // "menu.selectionBorder": "#f00",
-        "menu.separatorBackground": "#{{ shade }}", //7
+        "menu.separatorBackground": "#{{ container | smartLighten 0.2 }}", //7
         // "menu.border": "#f00",
 
         // Command Center colors
         "commandCenter.foreground": "#{{ text }}", //5
-        "commandCenter.activeForeground": "#{{ shade }}", //7
+        "commandCenter.activeForeground": "#{{ container | smartLighten 0.2 }}", //7
         "commandCenter.background": "#{{ base }}", //0
         "commandCenter.activeBackground": "#{{ container }}", //1
         // "commandCenter.border": "#ff0000",
@@ -482,13 +482,13 @@
         "notification.foreground": "#{{ text }}", //5
         "notification.buttonBackground": "#{{ primary }}", //D
         "notification.buttonHoverBackground": "#{{ shade }}", //2
-        "notification.buttonForeground": "#{{ shade }}", //7
+        "notification.buttonForeground": "#{{ container | smartLighten 0.2 }}", //7
         "notification.infoBackground": "#{{ cyan }}", //C
-        "notification.infoForeground": "#{{ shade }}", //7
+        "notification.infoForeground": "#{{ container | smartLighten 0.2 }}", //7
         "notification.warningBackground": "#{{ warning }}", //A
-        "notification.warningForeground": "#{{ shade }}", //7
+        "notification.warningForeground": "#{{ container | smartLighten 0.2 }}", //7
         "notification.errorBackground": "#{{ error }}", //8
-        "notification.errorForeground": "#{{ shade }}", //7
+        "notification.errorForeground": "#{{ container | smartLighten 0.2 }}", //7
         // Above is no longer supported as of 1.21
 
         // Banner colors
@@ -498,10 +498,10 @@
 
         // Extensions colors
         "extensionButton.prominentBackground": "#{{ success }}", //B
-        "extensionButton.prominentForeground": "#{{ shade }}", //7
+        "extensionButton.prominentForeground": "#{{ container | smartLighten 0.2 }}", //7
         "extensionButton.prominentHoverBackground": "#{{ shade }}", //2
         "extensionBadge.remoteBackground": "#{{ orange }}", //9
-        "extensionBadge.remoteForeground": "#{{ shade }}", //7
+        "extensionBadge.remoteForeground": "#{{ container | smartLighten 0.2 }}", //7
         "extensionIcon.starForeground": "#{{ warning }}", //A
         "extensionIcon.verifiedForeground": "#{{ primary }}", //D
         "extensionIcon.preReleaseForeground": "#{{ orange }}", //9
@@ -513,8 +513,8 @@
         "quickInput.background": "#{{ container }}", //1
         "quickInput.foreground": "#{{ text }}", //5
         "quickInputList.focusBackground": "#{{ subtle }}", //3
-        "quickInputList.focusForeground": "#{{ shade }}", //7
-        "quickInputList.focusIconForeground": "#{{ shade }}", //7
+        "quickInputList.focusForeground": "#{{ container | smartLighten 0.2 }}", //7
+        "quickInputList.focusIconForeground": "#{{ container | smartLighten 0.2 }}", //7
         // "quickInputTitle.background": "#ff0000",
 
         // Keybinding label colors
@@ -546,7 +546,7 @@
         "terminal.ansiBrightBlue": "#{{ primary }}", //D
         "terminal.ansiBrightMagenta": "#{{ alternate }}", //E
         "terminal.ansiBrightCyan": "#{{ cyan }}", //C
-        "terminal.ansiBrightWhite": "#{{ shade }}", //7
+        "terminal.ansiBrightWhite": "#{{ container | smartLighten 0.2 }}", //7
         // "terminal.selectionBackground": "#f0f",
         // "terminal.selectionForeground": "#ff0000",
         // "terminal.findMatchBackground": "#ff0000",
@@ -569,7 +569,7 @@
         // "editor.inlineValuesBackground": "#ff0000",
         // "debugView.exceptionLabelForeground": "#ff0000",
         // "debugView.exceptionLabelBackground": "#ff0000",
-        "debugView.stateLabelForeground": "#{{ shade }}", //7
+        "debugView.stateLabelForeground": "#{{ container | smartLighten 0.2 }}", //7
         "debugView.stateLabelBackground": "#{{ primary }}", //D
         "debugView.valueChangedHighlight": "#{{ primary }}", //D
         "debugTokenExpression.name": "#{{ alternate }}", //E
@@ -650,8 +650,8 @@
         // Breadcrumbs colors
         "breadcrumb.foreground": "#{{ text }}", //5
         "breadcrumb.background": "#{{ container }}", //1
-        "breadcrumb.focusForeground": "#{{ text | smartLighten 0.2 }}", //6
-        "breadcrumb.activeSelectionForeground": "#{{ shade }}", //7
+        "breadcrumb.focusForeground": "#{{ subtle | smartLighten 0.2 }}", //6
+        "breadcrumb.activeSelectionForeground": "#{{ container | smartLighten 0.2 }}", //7
         "breadcrumbPicker.background": "#{{ container }}", //1
 
         // Snippets colors

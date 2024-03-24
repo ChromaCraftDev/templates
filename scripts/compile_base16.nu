@@ -5,5 +5,5 @@ def main [input: path, output: path]: nothing -> nothing {
   | reduce -f (open --raw $input) {|it, acc|
     $acc | str replace -a $it.find $it.replace
   }
-  | save $output
+  | save $output -f
 }

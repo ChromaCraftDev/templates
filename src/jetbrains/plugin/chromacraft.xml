@@ -1,7 +1,4 @@
-<!--    Base16 {{scheme-name}}
-        Author: {{scheme-author}}   -->
-
-<scheme name="Base16 {{scheme-name}}" version="142" parent_scheme="Darcula">
+<scheme name="ChromaCraft Dynamic Theme" version="142" parent_scheme="Darcula">
     <colors>
         <option name="ADDED_LINES_COLOR" value="{{ success }}" />
         <option name="ANNOTATIONS_COLOR" value="{{ text }}" />

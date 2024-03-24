@@ -25,11 +25,11 @@
   },
   {
     "find": "{{base06-hex}}",
-    "replace": "{{ text | smartLighten 0.2 }}"
+    "replace": "{{ subtle | smartLighten 0.2 }}"
   },
   {
     "find": "{{base07-hex}}",
-    "replace": "{{ shade }}"
+    "replace": "{{ container | smartLighten 0.2 }}"
   },
   {
     "find": "{{base08-hex}}",

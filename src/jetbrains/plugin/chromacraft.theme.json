@@ -1,6 +1,5 @@
 {
   "name": "ChromaCraft Dynamic Theme",
-  "dark": true,
   "author": "ChromaCraft",
   "editorScheme": "/chromacraft.xml",
   "colors": {
@@ -10,8 +9,8 @@
     "base03": "#{{ subtle }}",
     "base04": "#{{ subtle | smartLighten 0.2 }}",
     "base05": "#{{ text }}",
-    "base06": "#{{ text | smartLighten 0.2 }}",
-    "base07": "#{{ shade }}",
+    "base06": "#{{ subtle | smartLighten 0.2 }}",
+    "base07": "#{{ container | smartLighten 0.2 }}",
     "base08": "#{{ error }}",
     "base09": "#{{ orange }}",
     "base0A": "#{{ warning }}",
