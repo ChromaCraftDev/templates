@@ -29,8 +29,8 @@ jobs:
             zip -x "preview.webp" -r "../../dist/$(basename "$dir").zip" . >/dev/null
             popd >/dev/null
             cat "$dir/meta.json"
-          done # | \
-          # jq -sc > dist/templates.json
+          done | \
+          jq -sc > dist/templates.json
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
